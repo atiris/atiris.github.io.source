@@ -5,12 +5,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Initialization
 
 ```bash
-ng new home --directory=atiris.github.io --experimentalIvy=true --force=true --prefix=athome --routing=true --style=scss
+ng new home --directory=atiris.github.io.source --experimentalIvy=true --force=true --prefix=athome --routing=true --style=scss
 ```
 
 ## Github deploy
 
 ```bash
-ng build --prod --base-href "https://atiris.github.io/"
-ngh -no-silent -d dist/PROJECT-NAME
+ng build --prod --outputPath=dist/home --base-href "https://atiris.github.io/"
+ngh --no-silent --dir=dist/home --repo=https://github.com/atiris/atiris.github.io.git --branch=master
 ```
